@@ -1,0 +1,72 @@
+.event-grid {
+    padding: 60px 0;
+    background-color: var(--light-gray);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .grid-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .grid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .grid-item:hover .grid-image img {
+    transform: scale(1.05);
+  }
+  
+  .grid-content {
+    padding: 20px;
+  }
+  
+  .grid-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--dark-blue);
+  }
+  
+  .grid-content p {
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .grid-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .grid-button:hover {
+    background-color: var(--secondary-color);
+  }
